@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Image } from 'react-native'
+import { View } from 'react-native'
 import Logo from '../../components/atoms/Logo'
 
 const Splash = () => {
