@@ -4,11 +4,16 @@ import Logo from '../../components/atoms/Logo'
 import MyButton from '../../components/atoms/MyButton'
 import Header from '../../components/molecules/Header'
 
-const Welcome = () => {
+const Welcome = ({ navigation }) => {
+
+    const toPage = (page) => {
+        navigation.navigate(page)
+    }
+
     return(
         <View>
 
-            <Header imgLeft={require('../../assets/icon/back.png')} />
+            <Header/>
 
             <View style={{marginHorizontal: 20}}>
 
@@ -23,7 +28,7 @@ const Welcome = () => {
 
                 <View style={{marginTop: 48}}>
                     <MyButton style={{backgroundColor: "#cd4559", color: 'white'}} title="Login"/>
-                    <MyButton style={{backgroundColor: "white", color: '#cd4559', borderColor: '#cd4559'}} title="Register"/>
+                    <MyButton onPress={()=>toPage('Register')} style={{backgroundColor: "white", color: '#cd4559', borderColor: '#cd4559'}} title="Register"/>
                 </View>
             </View>
         </View>
