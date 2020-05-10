@@ -5,6 +5,8 @@ import { createStackNavigator } from '@react-navigation/stack';
 import Splash from './src/containers/pages/Splash';
 import Welcome from './src/containers/pages/Welcome';
 import Register from './src/containers/pages/Register';
+import Login from './src/containers/pages/Login';
+import Donation from './src/containers/pages/Donation';
 
 const Stack = createStackNavigator();
 
@@ -28,6 +30,8 @@ const App = () => {
 
         <Stack.Screen name="Home" component={ state.splash ? Splash : Welcome } />
         <Stack.Screen name="Register" component={Register}/>
+        <Stack.Screen name="Login" component={Login}/>
+        <Stack.Screen name="Donation" component={Donation}/>
 
       </Stack.Navigator>
     </NavigationContainer>

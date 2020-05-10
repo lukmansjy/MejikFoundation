@@ -13,9 +13,9 @@ const Header = ({imgLeft, imgRight, title, border}) => {
                 <TouchableOpacity>
                     <Image source={imgLeft} style={{width: 24, height: 24}}/>
                 </TouchableOpacity>
-                <View>
-                    {imgRight ? <Image source={require('../../assets/icon/back.png')} style={{width: 26, height: 26}}/> : null}
-                </View>
+                <TouchableOpacity>
+                    {imgRight ? <Image source={imgRight} style={{width: 26, height: 26}}/> : null}
+                </TouchableOpacity>
             </View>
         </View>
     )
