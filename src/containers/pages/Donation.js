@@ -8,7 +8,7 @@ import LabelDonation from '../organisms/LabelDonation'
 import LabelTimeline from '../organisms/LabelTimeline'
 import MyButton from '../../components/atoms/MyButton'
 
-const Donation = () => {
+const Donation = ({navigation}) => {
     return(
         <View>
             <Header border title="Donation" imgLeft={require('../../assets/icon/close.png')} imgRight={require('../../assets/icon/history.png')}/>
@@ -50,7 +50,7 @@ const Donation = () => {
                     <Text style={{fontSize: 16, marginTop: 10, fontWeight: '700', marginVertical: 7, color: '#3b3b3b'}}>Total Donation</Text>
                     <Text style={{fontSize: 16, marginTop: 10, fontWeight: '700', marginVertical: 7, color: '#cd4559'}}>Rp600.000</Text>
                 </View>
-                <MyButton style={{backgroundColor: '#cd4559', color: 'white', marginTop: 2}} title="DONATE NOW"/>
+                <MyButton onPress={()=>navigation.navigate('Transfer')} style={{backgroundColor: '#cd4559', color: 'white', marginTop: 2}} title="DONATE NOW"/>
 
             </ScrollView>
         </View>

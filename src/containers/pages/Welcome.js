@@ -1,5 +1,5 @@
 import React from 'react'
-import { View } from 'react-native'
+import { View, StatusBar } from 'react-native'
 import Logo from '../../components/atoms/Logo'
 import MyButton from '../../components/atoms/MyButton'
 import Header from '../../components/molecules/Header'

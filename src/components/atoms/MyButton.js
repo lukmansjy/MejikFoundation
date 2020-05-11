@@ -9,6 +9,7 @@ const MyButton = ({style, title, onPress}) => {
             style={{
                 backgroundColor: style.backgroundColor,
                 paddingVertical: 11,
+                paddingHorizontal: 16,
                 borderRadius: 4,
                 alignItems: 'center',
                 marginBottom: 10,

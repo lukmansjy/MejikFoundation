@@ -7,6 +7,7 @@ import Welcome from './src/containers/pages/Welcome';
 import Register from './src/containers/pages/Register';
 import Login from './src/containers/pages/Login';
 import Donation from './src/containers/pages/Donation';
+import Transfer from './src/containers/pages/Transfer';
 
 const Stack = createStackNavigator();
 
@@ -32,6 +33,7 @@ const App = () => {
         <Stack.Screen name="Register" component={Register}/>
         <Stack.Screen name="Login" component={Login}/>
         <Stack.Screen name="Donation" component={Donation}/>
+        <Stack.Screen name="Transfer" component={Transfer}/>
 
       </Stack.Navigator>
     </NavigationContainer>
