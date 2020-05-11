@@ -8,6 +8,7 @@ import Register from './src/containers/pages/Register';
 import Login from './src/containers/pages/Login';
 import Donation from './src/containers/pages/Donation';
 import Transfer from './src/containers/pages/Transfer';
+import Article from './src/containers/pages/Article';
 
 const Stack = createStackNavigator();
 
@@ -29,7 +30,8 @@ const App = () => {
           headerShown: false
         }}>
 
-        <Stack.Screen name="Home" component={ state.splash ? Splash : Welcome } />
+        <Stack.Screen name="Home" component={ state.splash ? Splash : Article } />
+        <Stack.Screen name="Welcome" component={Welcome}/>
         <Stack.Screen name="Register" component={Register}/>
         <Stack.Screen name="Login" component={Login}/>
         <Stack.Screen name="Donation" component={Donation}/>
