@@ -1,11 +1,11 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { View } from 'react-native'
 import MyButton from '../../components/atoms/MyButton'
 import Header from '../../components/molecules/Header'
 import MyInputText from '../../components/atoms/MyInputText'
 import Info from '../../components/atoms/Info'
 
-const Register = () => {
+const Register = ({navigation}) => {
     return(
         <View>
 
@@ -20,7 +20,7 @@ const Register = () => {
 
                 <MyInputText label="Phone Number" placeholder="e.g 82226455525" imgIconLeft={require('../../assets/icon/id-flag.png')} labelImgIconLeft="+62" keyboardType='numeric'/>
 
-                <MyButton style={{backgroundColor: "#cd4559", color: 'white', marginTop: 20}} title="Continue"/>
+                <MyButton onPress={()=>navigation.navigate('Donation')} style={{backgroundColor: "#cd4559", color: 'white', marginTop: 20}} title="Continue"/>
 
             </View>
 
